@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking | CityDrive</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo">CityDrive Rentals</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="cars.html">Cars</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+</nav>
+</header>
+
+
+<section class="form-section">
+
+<h1>Car Booking Request</h1>
+
+<form id="bookingForm" onsubmit="return validateBooking()">
+
+<label>Name</label>
+<input type="text" id="name">
+
+<label>Phone</label>
+<input type="text" id="phone">
+
+<label>Email</label>
+<input type="email" id="email">
+
+<label>Driving License</label>
+<input type="text" id="license">
+
+<label>Select Car Type</label>
+<select id="car">
+<option>Economy</option>
+<option>Luxury</option>
+<option>SUV</option>
+<option>Sports</option>
+<option>Electric</option>
+</select>
+
+<label>Start Date</label>
+<input type="date" id="start">
+
+<label>End Date</label>
+<input type="date" id="end">
+
+<label>Special Requests</label>
+<textarea id="request"></textarea>
+
+<button type="submit">Submit Booking</button>
+
+</form>
+
+</section>
+
+
+<footer>
+<p>© 2026 CityDrive Rentals</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
